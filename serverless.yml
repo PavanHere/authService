@@ -4,6 +4,8 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs18.x
+  environment:
+    CLIENT_ID: ${ssm:/my-app/client-id}
 
 
 

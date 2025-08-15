@@ -6,7 +6,7 @@ const client = new CognitoIdentityProviderClient({
 
 //Define Coginto App Client ID for user pool authention
 
-const CLIENT_ID = "6s8fd3t0asd6tsdl8n269hrm3a";
+const CLIENT_ID = process.env.CLIENT_ID;
 
 exports.signIn = async  (event) =>{
     const {email, password} = JSON.parse(event.body);

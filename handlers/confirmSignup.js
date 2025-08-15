@@ -10,7 +10,7 @@ exports.confirmSignup = async(event)=>{
     const{email,confirmationCode}=JSON.parse(event.body);
 
     const params={
-        ClientId: CLIENT_ID,
+        ClientId: process.env.CLIENT_ID,
       Username: email,
       ConfirmationCode: confirmationCode,
     

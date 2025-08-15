@@ -1,7 +1,7 @@
 const { CognitoIdentityProviderClient, SignUpCommand } = require('@aws-sdk/client-cognito-identity-provider');
 
 const client = new CognitoIdentityProviderClient({ region: 'us-east-1' });
-const CLIENT_ID = "6s8fd3t0asd6tsdl8n269hrm3a";
+const CLIENT_ID = process.env.CLIENT_ID;
 
 module.exports.signUp = async (event) => {
   try {
