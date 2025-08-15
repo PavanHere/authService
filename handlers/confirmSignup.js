@@ -23,7 +23,7 @@ exports.confirmSignup = async(event)=>{
 
         return {
             statusCode: 200,
-            body: JSON.stringify({ msg: "User successfully confirmed" })
+            body: JSON.stringify({ msg: "User successfully  confirmed" })
           };
     } catch (error) {
         
