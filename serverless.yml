@@ -1,0 +1,31 @@
+service: authService
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+
+
+
+functions:
+  api:
+    handler: index.handler
+    events:
+      - httpApi:
+          path: /
+          method: get
+
+  signUp:
+    handler: handlers/signUp.signUp
+    events:
+      - httpApi:
+          path: /signUp
+          method: post
+  confirmSignup:
+    handler: handlers/confirmSignup.confirmSignup
+    events:
+      - httpApi:
+          path: /confirmSignup
+          method: post
+
