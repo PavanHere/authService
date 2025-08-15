@@ -28,4 +28,11 @@ functions:
       - httpApi:
           path: /confirmSignup
           method: post
+  signIn:
+    handler: handlers/signIn.signIn
+    events:
+      - httpApi:
+          path: /signIn
+          method: post
+  
 
