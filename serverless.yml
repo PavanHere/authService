@@ -1,5 +1,5 @@
 service: authService
-frameworkVersion: '3'
+frameworkVersion: '4'
 
 provider:
   name: aws
