@@ -9,7 +9,7 @@ exports.signOut = async (event)=>{
     const {accessToken} = JSON.parse(event.body);
 
    const params ={
-    AccessToken :accessToken,//The access token from the sign in response 
+    AccessToken :accessToken,//The access token from the sign in response is
    };
 
    try {
