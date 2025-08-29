@@ -7,6 +7,8 @@ module.exports.signUp = async (event) => {
   try {
     const { email, password, fullName } = JSON.parse(event.body);
 
+    //trigger api
+
     const params = {
       ClientId: CLIENT_ID,
       Username: email,
